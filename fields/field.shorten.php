@@ -124,10 +124,10 @@
 		 * @param mixed errors (optional)
 		 *	the input error collection. this defaults to null.
 		 */
-		public function displaySettingsPanel(XMLElement &$wrapper, $errors = null)
+		public function displaySettingsPanel(XMLElement $wrapper, $errors = null)
 		{
 
-			parent::displaySettingsPanel(&$wrapper, $errors=NULL);
+			parent::displaySettingsPanel($wrapper, $errors=NULL);
 
 			$order = $this->get('sortorder');
 
